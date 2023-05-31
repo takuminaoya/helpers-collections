@@ -1,0 +1,148 @@
+/*-----------------------------------------------------------------
+// Kumpulan fungsi pendukung development JS
+//-----------------------------------------------------------------
+// Author          : AbsoluteHelix (OCW)
+// Dibuat Pada     : 07/03/2023
+// Tipe            : Javascript / JS
+//-----------------------------------------------------------------*/
+
+.garis-bawah {
+    border-bottom:thin solid #000; 
+    padding-top:10px;
+}
+
+.tr-hover:hover {
+    background-color: lightblue;
+}
+
+.tr-selected {
+    background-color: aquamarine;
+}
+
+.image-thumbnail {
+    width:50px; 
+    height:50px; 
+    object-fit:cover; 
+    padding:3px; 
+    border: thin solid #CCC; 
+    background-color:white;
+}
+
+form input[type="text"] {
+    text-transform: lowercase;
+}
+
+/* Toast */
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 300px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #fff; /* Black background color */
+    color: #000; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 15px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 90%; /* Center the snackbar */
+    bottom: 25px; /* 30px from the bottom */
+    box-shadow: 2px 4px 6px #888888;
+}
+
+@media screen and (max-width: 531px){
+    #snackbar {
+        visibility: hidden; /* Hidden by default. Visible on click */
+        min-width: 300px; /* Set a default minimum width */
+        margin-left: -125px; /* Divide value of min-width by 2 */
+        background-color: #fff; /* Black background color */
+        color: #000; /* White text color */
+        text-align: center; /* Centered text */
+        border-radius: 2px; /* Rounded borders */
+        padding: 15px; /* Padding */
+        position: fixed; /* Sit on top of the screen */
+        z-index: 1; /* Add a z-index if needed */
+        left: 45%; /* Center the snackbar */
+        bottom: 25px; /* 30px from the bottom */
+        box-shadow: 2px 4px 6px #888888;
+    }
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 25px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 25px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 25px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 25px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+.box-inside-toast {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+.icon-inside-toast {
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    line-height: 63px;
+}
+
+.toast-title {
+    position: absolute; 
+    left: 25%; 
+    bottom:58%;
+}
+
+.toast-description {
+    position: absolute; 
+    left: 25%; 
+    bottom:30%;
+    font-size: 13px;
+}
+/* Toast */
+
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#40475C;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.float:hover{
+    background-color: #0C3;
+}
+
+.textLine {
+    border-bottom: thin solid #CCC;
+    padding-bottom: 10px;
+}
